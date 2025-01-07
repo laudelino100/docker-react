@@ -6,5 +6,5 @@ before_install:
   - docker build -t frontend/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true rontend/docker-reac npm run test
+  - docker run -e CI=true rontend/docker-reac npm run test -- --coverage
   
